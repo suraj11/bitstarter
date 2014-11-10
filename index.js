@@ -8,6 +8,7 @@ app.use(express.static(__dirname + '/public'))
 fs.readSync("index.html", buffer);
 console.log("buffer is" + buffer)
 app.get('/', function(request, response) {
+	response.send("hello")
 	response.send(buffer.toString('utf-8'))
 	
 })

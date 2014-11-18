@@ -1,21 +1,29 @@
 {
-  "name": "static-heroku-node",
-  "version": "0.0.0",
-  "description": "Static applciation to host vanilla HTML/CSS",
+  "name": "node-js-sample",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using Express 4",
   "main": "app.js",
   "scripts": {
-   "start": "node app.js"	
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-sample",
-  },
-  "author": "Aditya Bansod (@adityabansod, http://www.adityabansod.net)",
-  "license": "MIT",
   "dependencies": {
-    "express": "~3.4.7"
+    "express": "^4.0.0"
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-sample"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Mark Pundsack",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+  ],
+  "license": "MIT"
 }

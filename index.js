@@ -7,3 +7,7 @@ app.use(express.static(__dirname + '/img'))
 app.get('/', function(request, response) {
 	response.sendfile(__dirname + '/index.html')
 })
+
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})

@@ -5,11 +5,7 @@ var buffer = new Buffer(16);
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
-buffer = fs.readFileSync("index.html");
+app.use(express.static(__dirname + '/img'))
 app.get('/', function(request, response) {
-	response.sendfile(__dirname + '/index.html')
-})
-
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
+	response.render(__dirname + '/index.html')
 })
